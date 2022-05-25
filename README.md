@@ -1,24 +1,52 @@
-# README
+# Hello API!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an exercise API that greets you with five different messages in a JSON format. 
 
-Things you may want to cover:
+Additionally, an UI that feeds from this API was also built. Find the [React App here](https://github.com/danalvrz/hello-react-front-end).
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- PostgreSQL
 
-* Configuration
 
-* Database creation
+## Getting Started
 
-* Database initialization
+1. Clone the project using git-bash or Githup Desktop.
+2. Open the project folder with VSCode or any Editor.
+3. Open terminal and navigate to the project folder.
+4. Run `rails db:create`.
+5. Run `rails db:migrate`.
+6. Run `rails s`.
 
-* How to run the test suite
+## Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+- Greetings (endpoint):
+`GET '/greetings'`
+returns a JSON object with all five greetings and their unique message.
 
-* Deployment instructions
+- Random (endpoint):
+`GET '/greetings/random'`
+returns a JSON object with a random greeting message.
 
-* ...
+
+## Author
+
+👤 **Dante Alvarez**
+
+- GitHub: [@danalvrz](https://github.com/danalvrz)
+- Twitter: [@danalvrz](https://twitter.com/danalvrz)
+- LinkedIn: [Dante Alvarez](https://www.linkedin.com/in/dante-alvarez-p/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+
+## 👏 Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+[License: MIT](https://opensource.org/licenses/MIT)
