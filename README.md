@@ -19,11 +19,11 @@ This is an exercise API that greets you with five different messages in a JSON f
 
 - Greetings (endpoint):
 `GET '/greetings'`
-returns a JSON object with all five grettings and their unique message.
+returns a JSON object with all five greetings and their unique message.
 
 - Random (endpoint):
 `GET '/greetings/random'`
-returns a JSON object with a random gretting message.
+returns a JSON object with a random greeting message.
 
 
 ## Author
