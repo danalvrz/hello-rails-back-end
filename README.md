@@ -13,7 +13,9 @@ This is an exercise API that greets you with five different messages in a JSON f
 1. Clone the project using git-bash or Githup Desktop.
 2. Open the project folder with VSCode or any Editor.
 3. Open terminal and navigate to the project folder.
-4. Run `rails s`.
+4. Run `rails db:create`.
+5. Run `rails db:migrate`.
+6. Run `rails s`.
 
 ## Usage
 
