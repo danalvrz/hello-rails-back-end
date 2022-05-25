@@ -1,24 +1,48 @@
-# README
+# Hello API!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an exercise API that greets you with five different messages in a JSON format. 
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- PostgreSQL
 
-* System dependencies
 
-* Configuration
+## Getting Started
 
-* Database creation
+1. Clone the project using git-bash or Githup Desktop.
+2. Open the project folder with VSCode or any Editor.
+3. Open terminal and navigate to the project folder.
+4. Run `rails s`.
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+- Greetings (endpoint):
+`GET '/greetings'`
+returns a JSON object with all five grettings and their unique message.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Random (endpoint):
+`GET '/greetings/random'`
+returns a JSON object with a random gretting message.
 
-* Deployment instructions
 
-* ...
+## Author
+
+👤 **Dante Alvarez**
+
+- GitHub: [@danalvrz](https://github.com/danalvrz)
+- Twitter: [@danalvrz](https://twitter.com/danalvrz)
+- LinkedIn: [Dante Alvarez](https://www.linkedin.com/in/dante-alvarez-p/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+
+## 👏 Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+[License: MIT](https://opensource.org/licenses/MIT)
