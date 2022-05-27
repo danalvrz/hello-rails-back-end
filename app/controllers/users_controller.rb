@@ -12,6 +12,8 @@ class UsersController < ApplicationController
         render json: @user
     end
 
+    # POST /users
+    # body: { :username, :password}
     def create
         @user = User.create(user_params)
         if @user.valid?

@@ -1,6 +1,7 @@
 class AuthController < ApplicationController
     
-    # POST /login { :username, :password }
+    # POST /login 
+    # body { :username, :password }
     def login
         user = User.find_by(username: login_params[:username])
         if user && user.authenticate(login_params[:password])
