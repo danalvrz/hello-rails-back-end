@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :greetings, only: [:index]
-  resources :users do
+  resources :users,  only: [:create, :destroy] do
     resources :favorites, only: [:index, :create, :destroy]
   end
   get '/greetings/random', to: 'greetings#random'

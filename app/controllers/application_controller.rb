@@ -38,20 +38,4 @@ class ApplicationController < ActionController::API
           render json: { message: "unauthorized access" }
       end
   end
-
-  # turn user data (payload) to an encrypted string
-  def encode_user_data(payload)
-    token = JWT.encode payload, SECRET, "HS256"
-    return token
-  end
-
-  # decode token and return user info, this returns an array
-  def decode_user_data(token)
-    begin
-      data = JWT.decode token, SECRET, true, { algorithm: "HS256" }
-      return data
-    rescue => e
-      puts e
-    end
-  end
 end
